@@ -18,7 +18,7 @@
 body {
   font-family: "Inter", sans-serif;
   background-color: rgba(245, 248, 255, 1);
-  width: 1140px;
+  max-width: 1140px;
   margin: 0 auto;
 }
 
@@ -35,4 +35,149 @@ h4,
 h5,
 p {
   margin: 0;
+}
+
+/* nav section */
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 24px 0;
+}
+
+.menu {
+  display: flex;
+  gap: 48px;
+}
+.menu ul {
+  display: flex;
+  gap: 48px;
+  padding: 0;
+}
+
+.menu ul li {
+  list-style: none;
+}
+
+.menu ul li a {
+  text-decoration: none;
+  color: rgb(137, 135, 161);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0%;
+  text-align: left;
+}
+
+.home-text {
+  color: rgb(37, 36, 50);
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 24px;
+  letter-spacing: 0%;
+  text-align: left;
+}
+
+.cart {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.cart img {
+  width: 22px;
+}
+
+.cart h5 {
+  color: rgb(0, 0, 0);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0%;
+  text-align: left;
+}
+
+/* hero section */
+.hero {
+  display: flex;
+  gap: 0;
+  justify-content: space-between;
+  align-items: center;
+  padding: 120px 0;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+h1 {
+  font-family: Noto Serif;
+  font-size: 65px;
+  font-weight: 700;
+  line-height: 89px;
+  letter-spacing: 0%;
+  text-align: left;
+  color: #000;
+}
+
+.h1-span {
+  color: rgb(233, 90, 8);
+}
+
+p {
+  color: rgba(0, 0, 0, 0.5);
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 27px;
+  letter-spacing: 0%;
+  text-align: left;
+}
+
+/* responsive style */
+@media screen and (max-width: 576px) {
+  .menu ul {
+    display: none;
+  }
+  nav {
+    padding: 16px;
+  }
+  .logo img {
+    width: 63px;
+    height: 38px;
+  }
+
+  /* hero section */
+  .hero {
+    gap: 28px;
+    flex-direction: column-reverse;
+    padding: 28px 0 96px 0;
+  }
+
+  .hero-img {
+    width: 100%;
+  }
+
+  .hero-img img {
+    width: 100%;
+    height: auto;
+  }
+
+  h1 {
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 33px;
+    letter-spacing: 0%;
+  }
+  p {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 17px;
+    letter-spacing: 0%;
+  }
+
+  .content {
+    padding: 0 16px;
+  }
 }
