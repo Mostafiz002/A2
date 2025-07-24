@@ -18,6 +18,10 @@
 body {
   font-family: "Inter", sans-serif;
   background-color: rgba(245, 248, 255, 1);
+  margin: 0;
+}
+
+.container {
   max-width: 1140px;
   margin: 0 auto;
 }
@@ -348,7 +352,51 @@ nav {
   text-decoration-line: underline;
 }
 
-/**************** responsive style *****************/
+/* join section */
+.join-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 200px 0;
+  gap: 24px;
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+    url("../asset/news-letter-bg.png") no-repeat center/cover;
+}
+
+form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 70%;
+}
+
+.input {
+  width: 60%;
+  padding: 15px;
+  font-size: 17px;
+  color: black;
+}
+
+.button {
+  border: none;
+  background-color: rgb(233, 90, 8);
+  color: rgb(255, 255, 255);
+  font-family: Inter;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 19px;
+  letter-spacing: 0%;
+  text-align: left;
+  text-decoration: none;
+  padding: 15px 30px;
+  padding-bottom: 17px;
+  font-size: 17px;
+  color: #fff;
+  cursor: pointer;
+}
+
+/********************************************** responsive style ******************************************************/
 @media screen and (max-width: 576px) {
   .menu ul {
     display: none;
@@ -486,5 +534,22 @@ nav {
   .latest-deals {
     margin-bottom: 96px;
     padding: 0 16px;
+  }
+
+  /* join section  */
+  .join-container {
+    padding: 96px 16px;
+  }
+
+  form {
+    width: 100%;
+  }
+
+  .input {
+    width: 70%;
+  }
+
+  .button {
+    width: 40%;
   }
 }
