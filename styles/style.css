@@ -403,7 +403,6 @@ form {
   align-items: start;
   padding: 50px 0;
   gap: 80px;
-  background-color: rgb(250, 252, 255);
 }
 .footer-content {
   width: 40%;
@@ -432,6 +431,7 @@ form {
   flex-direction: column;
   gap: 32px;
   padding: 0;
+  margin: 0;
 }
 
 .footer-links ul li {
@@ -626,5 +626,8 @@ form {
   .socials {
     margin-top: 12px;
     justify-content: flex-start;
+  }
+  .footer-links ul {
+    margin: 16px 0;
   }
 }
